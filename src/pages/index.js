@@ -6,6 +6,6 @@ export default function Home() {
     return <Layout>
         <h1>Welcome To Our Studio!</h1>
         <p>It's Nice To Meet You</p>
-        <Link to="/about/">Learn about me &rarr;</Link>
+        <Link to="/services/">Tell me more &rarr;</Link>
     </Layout>
 };

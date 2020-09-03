@@ -40,6 +40,9 @@ function Header() {
             <NavLink to="/about/" activeClassName="current-page">
                 About
             </NavLink>
+            <NavLink to="/team/" activeClassName="current-page">
+                Team
+            </NavLink>
             <NavLink to="/contact/" activeClassName="current-page">
                 Contact
             </NavLink>

@@ -53,7 +53,7 @@ function Layout({children}) {
         <Header/>
         <main css={css`
                 margin: 2rem auto;
-                width: 550px
+                width: 1100px
             `}>{children}</main>
     </>;
 }

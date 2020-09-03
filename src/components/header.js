@@ -29,7 +29,9 @@ function Header() {
             display: flex;
             justify-content: space-between;
             padding: 0.5rem calc((100vw - 550px - 0.5rem)/2);`}>
+
         <NavLink to="/" fontWeight="bold">Agence Digital</NavLink>
+
         <nav css={css`margin-top: 0;`}>
             <NavLink to="/services/" activeClassName="current-page">
                 Services
@@ -50,6 +52,7 @@ function Header() {
                 Blog
             </NavLink>
         </nav>
+
     </header>;
 }
 

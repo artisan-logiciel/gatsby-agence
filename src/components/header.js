@@ -46,7 +46,7 @@ function Header() {
             <NavLink to="/contact/" activeClassName="current-page">
                 Contact
             </NavLink>
-            <NavLink to="/" activeClassName="current-page">
+            <NavLink to="/">
                 Blog
             </NavLink>
         </nav>

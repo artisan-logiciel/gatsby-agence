@@ -23,23 +23,31 @@ const NavLink = styled(Link)`
 
 
 function Header() {
-    return <header
-        css={css`
+    return <header css={css`
             background: #eee;
             border-bottom: 1px solid #ddd;
             display: flex;
             justify-content: space-between;
-            padding: 0.5rem calc((100vw - 550px - 0.5rem)/2);
-            
-        `}
-    >
+            padding: 0.5rem calc((100vw - 550px - 0.5rem)/2);`}>
         <NavLink to="/" fontWeight="bold">Agence Digital</NavLink>
         <nav css={css`margin-top: 0;`}>
-            <NavLink to="/" activeClassName="current-page">
-                Home
+            {/*<NavLink to="/" activeClassName="current-page">*/}
+            {/*    Home*/}
+            {/*</NavLink>*/}
+            <NavLink to="/services/" activeClassName="current-page">
+                Services
+            </NavLink>
+            <NavLink to="/portfolio/" activeClassName="current-page">
+                Portfolio
             </NavLink>
             <NavLink to="/about/" activeClassName="current-page">
                 About
+            </NavLink>
+            <NavLink to="/contact/" activeClassName="current-page">
+                Contact
+            </NavLink>
+            <NavLink to="https://hackernoon.com/" activeClassName="current-page">
+                Blog
             </NavLink>
         </nav>
     </header>;

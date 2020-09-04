@@ -6,6 +6,10 @@
 module.exports = {
   siteMetadata:{
     title: "Agence Digital",
+    description: "Digital agency : web site, mobile application and software on demand.",
   },
-  plugins: ["gatsby-plugin-emotion"],
+  plugins: [
+      "gatsby-plugin-emotion",
+      "gatsby-plugin-react-helmet"
+  ],
 }

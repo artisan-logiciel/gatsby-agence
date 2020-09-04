@@ -1,5 +1,6 @@
 import React from "react";
 import {Global, css} from "@emotion/core";
+import Helmet from "react-helmet";
 import Header from "./header";
 
 function Layout({children}) {
@@ -50,6 +51,12 @@ function Layout({children}) {
             }
         }
         `}/>
+        <Helmet>
+            <html lang="en"/>
+            <title>Hello Digital Agency</title>
+            <meta name="description"
+                  content="digital agency"/>
+        </Helmet>
         <Header/>
         <main css={css`
                 margin: 2rem auto;

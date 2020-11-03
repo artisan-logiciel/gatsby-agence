@@ -4,8 +4,7 @@ import Layout from "../components/layout";
 
 export default function Home() {
     return <Layout>
-        <h1>Welcome To Our Studio!</h1>
-        <p>It's Nice To Meet You</p>
+        <h1>Améliorons votre experience digital.</h1>
         <Link to="/services/">Tell me more &rarr;</Link>
     </Layout>
 };

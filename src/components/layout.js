@@ -36,7 +36,7 @@ export default function Layout({children}) {
             li { margin-top: 0.25rem;}
         }`}/>
         <Helmet>
-            <html lang="en"/>
+            <html lang="fr"/>
             <title>{title}</title>
             <meta name="description"
                   content={description}/>

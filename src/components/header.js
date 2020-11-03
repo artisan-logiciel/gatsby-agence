@@ -22,8 +22,8 @@ const NavLink = styled(Link)`
 `;
 
 
-function Header() {
-    return <header css={css`
+const Header = () => (
+    <header css={css`
             background: #eee;
             border-bottom: 1px solid #ddd;
             display: flex;
@@ -53,7 +53,7 @@ function Header() {
             </NavLink>
         </nav>
 
-    </header>;
-}
+    </header>
+);
 
 export default Header;

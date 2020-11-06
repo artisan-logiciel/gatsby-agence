@@ -31,7 +31,7 @@ const RealisationTemplate = ({data: {mdx: post}}) => {
                     Posted by {post.frontmatter.author}
                 </p>
                 <MDXRenderer>{post.body}</MDXRenderer>
-                <ReadLink to="/portfolio">&larr; back to all realisations</ReadLink>
+                <ReadLink to="/portfolio">&larr; retour à toutes les réalisations</ReadLink>
             </Layout>
         );
 };

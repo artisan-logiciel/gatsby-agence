@@ -5,6 +5,6 @@ import Layout from "../components/layout";
 export default function About() {
     return <Layout>
         {/*date: */}02-11-2020<br/>
-        <Link to="/">&larr; back to home</Link>
+        <Link to="/services/">Pour en savoir plus &rarr;</Link>
     </Layout>
 }

@@ -4,6 +4,6 @@ import Layout from "../components/layout";
 
 export default function Team() {
     return <Layout>
-        <Link to="/">&larr; back to home</Link>
+        <Link to="/services/">Pour en savoir plus &rarr;</Link>
     </Layout>
 }

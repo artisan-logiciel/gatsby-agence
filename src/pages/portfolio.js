@@ -3,9 +3,9 @@ import Layout from "../components/layout";
 import usePorfolio from "../hooks/use-porfolio";
 import RealisationPreview from "../components/realisation-preview";
 
-export default function Portfolio() {
-    return <Layout>
+const Portfolio = () =>
+    <Layout>
         {usePorfolio().map(realisation =>
             <RealisationPreview key={realisation.slug} realisation={realisation}/>)}
-    </Layout>
-}
+    </Layout>;
+export default Portfolio

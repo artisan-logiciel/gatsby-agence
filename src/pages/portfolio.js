@@ -1,9 +1,11 @@
 import React from "react";
-import {Link} from "gatsby";
 import Layout from "../components/layout";
+import usePorfolio from "../hooks/use-porfolio";
+import RealisationPreview from "../components/realisation-preview";
 
 export default function Portfolio() {
     return <Layout>
-        <Link to="/">&larr; back to home</Link>
+        {usePorfolio().map(realisation =>
+            <RealisationPreview key={realisation.slug} realisation={realisation}/>)}
     </Layout>
 }

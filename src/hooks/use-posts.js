@@ -9,6 +9,8 @@ const usePosts = () => {
             title
             author
             slug
+            date
+            type
           }
           excerpt
         }
@@ -16,7 +18,9 @@ const usePosts = () => {
     }
   `);
 
-    return data.allMdx.nodes.map(post => ({
+    return data.allMdx.nodes.filter(post => {
+        if (post.frontmatter.type.toString() === "post") return post
+    }).map(post => ({
         title: post.frontmatter.title,
         author: post.frontmatter.author,
         slug: post.frontmatter.slug,

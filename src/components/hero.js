@@ -6,7 +6,7 @@ import BackgroundImage from 'gatsby-background-image';
 const ImageBackground = styled(BackgroundImage)`
   background-position: top 20% center;
   background-size: cover;
-  height: 50vh;
+  height: 30vh;
 
   /* override the default margin for sibling elements  */
   + * {

@@ -15,8 +15,7 @@ const usePosts = () => {
               sharp: childImageSharp {
                 fluid(
                   maxWidth: 100
-                  maxHeight: 100
-                  duotone: { shadow: "#663399", highlight: "#ddbbff" }
+                  maxHeight: 100                  
                 ) {
                   ...GatsbyImageSharpFluid_withWebp
                 }
@@ -35,6 +34,8 @@ const usePosts = () => {
         title: post.frontmatter.title,
         author: post.frontmatter.author,
         slug: post.frontmatter.slug,
+        date:post.frontmatter.date,
+        image:post.frontmatter.image,
         excerpt: post.excerpt,
     }));
 };

@@ -26,12 +26,17 @@ export default function Layout({children}) {
             'Segoe UI Emoji','Segoe UI Symbol';
             font-size: 18px;
             line-height: 1.4;
-            > div { margin-top: 0;}            
+            
+           /* remove margin for the main div that Gatsby mounts into */  
+            > div { margin-top: 0;}
+
+
             h1, h2, h3, h4, h5, h6 {
                 color: #222;
                 line-height: 1.1;                
                 + * { margin-top: 0.5rem;}
-            }            
+            }
+                   
             strong { color: #222;}            
             li { margin-top: 0.25rem;}
         }`}/>
@@ -44,7 +49,6 @@ export default function Layout({children}) {
         <Header/>
         <main css={css`
                 margin: 2rem auto;
-                width: 1100px
-            `}>{children}</main>
+                width: 1100px`}>{children}</main>
     </>;
 };

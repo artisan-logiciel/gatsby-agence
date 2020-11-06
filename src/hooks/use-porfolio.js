@@ -16,7 +16,6 @@ const usePorfolio = () => {
                 fluid(
                   maxWidth: 100
                   maxHeight: 100
-                  duotone: { shadow: "#663399", highlight: "#ddbbff" }
                 ) {
                   ...GatsbyImageSharpFluid_withWebp
                 }
@@ -28,13 +27,15 @@ const usePorfolio = () => {
       }
     }
   `).allMdx.nodes
-        .filter(post => {
-            if (post.frontmatter.type.toString() === "realisation") return post
-        }).map(post => ({
-            title: post.frontmatter.title,
-            author: post.frontmatter.author,
-            slug: post.frontmatter.slug,
-            excerpt: post.excerpt,
+        .filter(realisation => {
+            if (realisation.frontmatter.type.toString() === "realisation") return realisation
+        }).map(realisation => ({
+            title: realisation.frontmatter.title,
+            author: realisation.frontmatter.author,
+            slug: realisation.frontmatter.slug,
+            date:realisation.frontmatter.date,
+            image:realisation.frontmatter.image,
+            excerpt: realisation.excerpt,
         }));
 };
 

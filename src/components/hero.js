@@ -13,9 +13,8 @@ const ImageBackground = styled(BackgroundImage)`
     margin-top: 0;
   }
 `;
-
+//  background-image: linear-gradient(to top, #ddbbffdd 2rem, #ddbbff00);
 const TextBox = styled('div')`
-  background-image: linear-gradient(to top, #ddbbffdd 2rem, #ddbbff00);
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -42,7 +41,7 @@ const TextBox = styled('div')`
 const Hero = () => {
     const { image } = useStaticQuery(graphql`
     query {
-      image: file(relativePath: { eq: "nicole-harrington-mn.jpg" }) {
+      image: file(relativePath: { eq: "bill-oxford.jpg" }) {
         sharp: childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid_withWebp
@@ -54,12 +53,7 @@ const Hero = () => {
 
     return (
         <ImageBackground Tag="section" fluid={image.sharp.fluid} fadeIn="soft">
-            <TextBox>
-                <h1>Frontend Masters + Gatsby &hearts;</h1>
-                <p>
-                    Hello Minnesota! <Link to="/about/">Learn about me &rarr;</Link>
-                </p>
-            </TextBox>
+            <TextBox/>
         </ImageBackground>
     );
 };

@@ -1,10 +1,9 @@
 .env
-cadrage
+cadrage/doc
 gatsby-agence.code-workspace
 .vscode
 
 .idea
-package-lock.json
 # Logs
 logs
 *.log

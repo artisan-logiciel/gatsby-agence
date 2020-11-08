@@ -39,5 +39,11 @@ module.exports = {
                 path: 'realisations',
             },
         },
+        {
+            resolve: 'gatsby-source-instagram',
+            options: {
+                username: 'build_funnels',
+            },
+        },
     ],
 };

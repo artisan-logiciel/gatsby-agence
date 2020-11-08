@@ -13,9 +13,9 @@ const PostPreview = ({post}) => (
       :first-of-type { margin-top: 1rem;}`}>
         <Link to={post.slug}
               css={css`margin: 1rem 1rem 0 0; width: 100px;`}>
-            <Image alt={post.title}
-                   css={css`* {margin-top: 0;}`}
-                   fluid={post.image.sharp.fluid}/>
+            <Image css={css`* {margin-top: 0;}`}
+                   fluid={post.image.sharp.fluid}
+                   alt={post.title}/>
         </Link>
         <div>
             <h3><Link to={post.slug}>{post.title}</Link></h3>

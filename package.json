@@ -7,12 +7,13 @@
   "scripts": {
     "build": "gatsby build",
     "dev": "gatsby develop",
-    "developDark": "GATSBY_GRAPHQL_IDE=playground gatsby develop",
+    "devdark": "GATSBY_GRAPHQL_IDE=playground gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "analyze": "ANALYZE_BUNDLE_SIZE=true gatsby build"
   },
   "dependencies": {
     "@emotion/core": "^10.0.35",

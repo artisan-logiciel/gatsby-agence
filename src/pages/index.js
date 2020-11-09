@@ -1,7 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
 import Hero from "../components/hero"
-import {Link} from "gatsby"
 
 const Home = () =>
     <>

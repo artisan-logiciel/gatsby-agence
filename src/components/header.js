@@ -25,8 +25,8 @@ const Header = () =>
     <NavLink to="/" fontWeight="bold">Digital Artisan</NavLink>
 
     <nav css={css`margin-top: 0;`}>
-        <NavLink to="/services/" activeClassName="current-page">
-            Services
+        <NavLink to="/blog/" activeClassName="current-page">
+            Blog
         </NavLink>
         <NavLink to="/portfolio/" activeClassName="current-page">
             Portfolio
@@ -34,14 +34,8 @@ const Header = () =>
         <NavLink to="/about/" activeClassName="current-page">
             About
         </NavLink>
-        <NavLink to="/team/" activeClassName="current-page">
-            Team
-        </NavLink>
         <NavLink to="/contact/" activeClassName="current-page">
             Contact
-        </NavLink>
-        <NavLink to="/blog/" activeClassName="current-page">
-            Blog
         </NavLink>
     </nav>
 </header>;

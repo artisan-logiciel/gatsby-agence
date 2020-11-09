@@ -2,7 +2,13 @@ import {graphql, useStaticQuery} from 'gatsby';
 
 const usePorfolio = () => useStaticQuery(graphql`
     query {
-      allMdx {
+      allMdx (
+        filter: {frontmatter:{type: {eq:"realisation"}}}
+        sort: { 
+          fields: [frontmatter___date]
+          order: DESC
+        }
+      ){
         nodes {
           frontmatter {
             title
@@ -25,10 +31,7 @@ const usePorfolio = () => useStaticQuery(graphql`
         }
       }
     }
-  `).allMdx.nodes
-    .filter(realisation => {
-        if (realisation.frontmatter.type.toString() === "realisation") return realisation
-    }).map(realisation => ({
+  `).allMdx.nodes.map(realisation => ({
         title: realisation.frontmatter.title,
         author: realisation.frontmatter.author,
         slug: realisation.frontmatter.slug,

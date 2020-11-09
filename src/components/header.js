@@ -22,7 +22,7 @@ const Header = () =>
         justify-content: space-between;
         padding: 0.5rem calc((100vw - 1100px - 0.5rem)/2);`}>
 
-    <NavLink to="/" fontWeight="bold">Digital Artisanat</NavLink>
+    <NavLink to="/" fontWeight="bold">Artisanat Digital</NavLink>
 
     <nav css={css`margin-top: 0;`}>
         <NavLink to="/blog/" activeClassName="current-page">

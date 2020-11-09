@@ -40,12 +40,6 @@ module.exports = {
             },
         },
         {
-            resolve: 'gatsby-source-instagram',
-            options: {
-                username: 'lesjoiesducode',
-            },
-        },
-        {
             resolve: 'gatsby-plugin-webpack-bundle-analyzer',
             options: {
                 production: true,

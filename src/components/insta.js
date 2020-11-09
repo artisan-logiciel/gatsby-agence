@@ -24,7 +24,6 @@ const Insta = () => {
               max-width: calc(33% - 1rem);
               width: 120px;
               transition: 200ms box-shadow linear;
-
               :focus,
               :hover {
                 box-shadow: 0 2px 14px #22222244;

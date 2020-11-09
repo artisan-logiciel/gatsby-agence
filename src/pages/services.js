@@ -4,6 +4,6 @@ import Layout from "../components/layout";
 
 const Services = () =>
     <Layout>
-        <Link to="/">&larr; back to home</Link>
+        <Link to="/">&larr; retour à la page d'acceuil</Link>
     </Layout>;
 export default Services

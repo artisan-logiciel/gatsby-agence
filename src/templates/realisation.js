@@ -20,20 +20,14 @@ export const query = graphql`
 
 const RealisationTemplate = ({data: {mdx: post}}) => {
     if (post.frontmatter.type.toString() === "realisation")
-        return (
-            <Layout>
-                <h1>{post.frontmatter.title}</h1>
-                <p
-                    css={css`
-            font-size: 0.75rem;
-          `}
-                >
-                    Posted by {post.frontmatter.author}
-                </p>
-                <MDXRenderer>{post.body}</MDXRenderer>
-                <ReadLink to="/portfolio">&larr; retour à toutes les réalisations</ReadLink>
-            </Layout>
-        );
+        return <Layout>
+            <h1>{post.frontmatter.title}</h1>
+            <p css={css`font-size: 0.75rem;`}>
+                Posted by {post.frontmatter.author}
+            </p>
+            <MDXRenderer>{post.body}</MDXRenderer>
+            <ReadLink to="/portfolio">&larr; retour à toutes les réalisations</ReadLink>
+        </Layout>;
 };
 
 export default RealisationTemplate;

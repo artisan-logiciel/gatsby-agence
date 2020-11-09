@@ -1,7 +1,6 @@
-import { graphql, useStaticQuery } from 'gatsby';
+import {graphql, useStaticQuery} from 'gatsby';
 
-const useInstagram = () => {
-    const data = useStaticQuery(graphql`
+const useInstagram = () => useStaticQuery(graphql`
     query {
        allInstaNode(limit: 12) {
         nodes {
@@ -18,14 +17,11 @@ const useInstagram = () => {
         }
       }
     }
-  `);
-
-    return data.allInstaNode.nodes.map(node => ({
-        ...node.localFile.childImageSharp,
-        id: node.id,
-        caption: node.caption,
-        username: node.username,
-    }));
-};
+  `).allInstaNode.nodes.map(node => ({
+    ...node.localFile.childImageSharp,
+    id: node.id,
+    caption: node.caption,
+    username: node.username,
+}));
 
 export default useInstagram;

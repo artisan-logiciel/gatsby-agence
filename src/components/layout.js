@@ -1,13 +1,13 @@
-import React from "react";
-import {Global, css} from "@emotion/core";
-import Helmet from "react-helmet";
-import Header from "./header";
-import useSiteMetadata from "../hooks/use-sitemetadata";
+import React from "react"
+import { Global, css } from "@emotion/core"
+import Helmet from "react-helmet"
+import Header from "./header"
+import useSiteMetadata from "../hooks/use-sitemetadata"
 
-export default function Layout({children}) {
-    const {title, description} = useSiteMetadata();
-    return <>
-        <Global styles={css`
+export default function Layout({ children }) {
+  const { title, description } = useSiteMetadata()
+  return <>
+    <Global styles={css`
         * {
             box-sizing: border-box;
             margin: 0;            
@@ -36,16 +36,16 @@ export default function Layout({children}) {
                 + * { margin-top: 0.5rem;}
             }
             strong { color: #222;}        
-            li { margin-top: 0.25rem;}}`}/>
-        <Helmet>
-            <html lang="fr"/>
-            <title>{title}</title>
-            <meta name="description"
-                  content={description}/>
-        </Helmet>
-        <Header/>
-        <main css={css`
+            li { margin-top: 0.25rem;}}`} />
+    <Helmet>
+      <html lang="fr" />
+      <title>{title}</title>
+      <meta name="description"
+            content={description} />
+    </Helmet>
+    <Header />
+    <main css={css`
                 margin: 2rem auto;
                 width: 1100px`}>{children}</main>
-    </>;
+  </>
 };

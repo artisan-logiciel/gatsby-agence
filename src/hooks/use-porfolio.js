@@ -1,4 +1,4 @@
-import {graphql, useStaticQuery} from 'gatsby';
+import { graphql, useStaticQuery } from "gatsby"
 
 const usePorfolio = () => useStaticQuery(graphql`
     query {
@@ -32,12 +32,12 @@ const usePorfolio = () => useStaticQuery(graphql`
       }
     }
   `).allMdx.nodes.map(realisation => ({
-        title: realisation.frontmatter.title,
-        author: realisation.frontmatter.author,
-        slug: realisation.frontmatter.slug,
-        date: realisation.frontmatter.date,
-        image: realisation.frontmatter.image,
-        excerpt: realisation.excerpt,
-    }));
+  title: realisation.frontmatter.title,
+  author: realisation.frontmatter.author,
+  slug: realisation.frontmatter.slug,
+  date: realisation.frontmatter.date,
+  image: realisation.frontmatter.image,
+  excerpt: realisation.excerpt
+}))
 
-export default usePorfolio;
+export default usePorfolio

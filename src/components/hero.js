@@ -1,16 +1,16 @@
-import React from 'react';
-import styled from '@emotion/styled';
-import {graphql, useStaticQuery} from 'gatsby';
-import BackgroundImage from 'gatsby-background-image';
+import React from "react"
+import styled from "@emotion/styled"
+import { graphql, useStaticQuery } from "gatsby"
+import BackgroundImage from "gatsby-background-image"
 
 const ImageBackground = styled(BackgroundImage)`
   background-position: top 20% center;
   background-size: cover;
   height: 30vh;
   /* override the default margin for sibling elements  */
-  + * { margin-top: 0;}`;
+  + * { margin-top: 0;}`
 
-const TextBox = styled('div')`
+const TextBox = styled("div")`
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -26,10 +26,10 @@ const TextBox = styled('div')`
     margin-top: 0;
   }
 
-  a { margin-top: 0.5rem;}`;
+  a { margin-top: 0.5rem;}`
 
 const Hero = () => {
-    const {image} = useStaticQuery(graphql`
+  const { image } = useStaticQuery(graphql`
     query {
       image: file(relativePath: { eq: "bill-oxford.jpg" }) {
         sharp: childImageSharp {
@@ -38,13 +38,13 @@ const Hero = () => {
           }
         }
       }
-    }`);
+    }`)
 
-    return <ImageBackground Tag="section"
-                            fluid={image.sharp.fluid}
-                            fadeIn="soft">
-        <TextBox/>
-    </ImageBackground>
-};
+  return <ImageBackground Tag="section"
+                          fluid={image.sharp.fluid}
+                          fadeIn="soft">
+    <TextBox />
+  </ImageBackground>
+}
 
-export default Hero;
+export default Hero

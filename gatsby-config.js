@@ -1,6 +1,6 @@
 module.exports = {
     siteMetadata: {
-        title: "Digital Artisan",
+        title: "Artisanat Digital",
         description: "Digital crafts : web site, mobile application and software on demand. Let's improve your digital journey!",
     },
     plugins: [

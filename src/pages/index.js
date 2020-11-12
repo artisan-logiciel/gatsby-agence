@@ -10,10 +10,10 @@ const Home = () =>
       <h1>Améliorer votre expérience digital.</h1>
       <h2>Comment j'interviens?</h2>
       <ol>
-        <li>Analyse des besoins, identifications des workflows pour répondre à la demande.</li>
-        <li>Prototypage et budget.</li>
+        <li>Analyse des besoins, identifications des traitements.</li>
+        <li>Prototypage et proposition de budget.</li>
         <li>Développement d'une solution.</li>
-        <li>Déploiment et exploitation de la solution.</li>
+        <li>Déploiement et exploitation de la solution.</li>
       </ol>
       <h2>Mes outils</h2>
       <h3>Méthodologies:</h3> Agile, scrum, kanban et merise.

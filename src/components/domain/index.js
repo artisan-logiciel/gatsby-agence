@@ -31,15 +31,15 @@ export const HowIdo = () =>
 export const DomainTools = () =>
   <>
     <h2>Mes outils</h2>
-    <h3>Méthodologies:</h3> Agile, scrum, kanban et merise.
+    <h3>Méthodologies:</h3> Agile, Scrum, Kanban et Merise.
     <h3>Design:</h3> Figma.
-    <h3>Mobile:</h3> AndroidStudio et Kotlin.
-    <h3>Front side:</h3> Gatsby et Reactjs.
+    <h3>Mobile:</h3> Kotlin et Android Studio.
+    <h3>Front side:</h3> Reactjs et Gatsbyjs.
     <h3>Server side:</h3>
     <ul css={css`list-style-type:none;`}>
-      <li>Spring-Boot et Kotlin</li>
-      <li>PostgreSQL, MySQL, H2 et Firebase</li>
+      <li>Kotlin, Groovy, Java et Spring-Boot </li>
       <li>Javascript, Node.js et ExpressJs</li>
+      <li>PostgreSQL, MySQL, H2 et Firebase</li>
       <li>Docker et Kubernetes</li>
     </ul>
     <LandingTransition>Accueil</LandingTransition>

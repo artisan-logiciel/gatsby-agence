@@ -1,11 +1,11 @@
 import React from "react"
-import Mojo from "./mojo"
+import Landing from "./landing"
 import HowIdo from "./how-i-do"
 import DomainTools from "./domain-tools"
 
-const Agence = () => <>
-  <Mojo />
+const DomainFacade = () => <>
+  <Landing />
   <HowIdo />
   <DomainTools />
 </>
-export default Agence
+export default DomainFacade

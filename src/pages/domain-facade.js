@@ -45,7 +45,7 @@ export const DomainFacade = () => {
       <h3 css={css`display: inline;`}>Méthodologies: </h3>Agile, Scrum, Kanban et Merise.<br />
       <h3 css={css`display: inline;`}>Design: </h3>Figma.<br />
       <h3 css={css`display: inline;`}>Mobile: </h3>Kotlin et Android Studio.<br />
-      <h3 css={css`display: inline;`}>Front side: </h3>Vanilla Javascript, Reactjs et Gatsbyjs.<br />
+      <h3 css={css`display: inline;`}>Front side: </h3>Html, Css, Vanilla Javascript, Reactjs et Gatsbyjs.<br />
       <h3 css={css`display: inline;`}>Server side: </h3>
       <ul css={css`list-style-type:none;
                     text-align: left;

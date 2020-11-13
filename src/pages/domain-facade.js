@@ -1,13 +1,13 @@
 import React, { useState } from "react"
 import { css } from "@emotion/core"
 
-export const { LANDING, HOW_I_DO, DOMAIN_TOOLS } = {
-  LANDING: "landing",
-  HOW_I_DO: "howIdo",
-  DOMAIN_TOOLS: "tools"
-}
 
-export const DomainFacade = () => {
+const DomainFacade = () => {
+  const { LANDING, HOW_I_DO, DOMAIN_TOOLS } = {
+    LANDING: "landing",
+    HOW_I_DO: "howIdo",
+    DOMAIN_TOOLS: "tools"
+  }
   const [landingPageState, setLandingPageState] = useState(LANDING)
 
   const changeState = () => {
@@ -59,3 +59,5 @@ export const DomainFacade = () => {
     </div>
   </>
 }
+
+export default DomainFacade

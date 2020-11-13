@@ -42,12 +42,14 @@ export const DomainFacade = () => {
     </div>
     <div id={DOMAIN_TOOLS} hidden={landingPageState !== DOMAIN_TOOLS}>
       <h2>Mes outils</h2>
-      <h3>Méthodologies:</h3> Agile, Scrum, Kanban et Merise.
-      <h3>Design:</h3> Figma.
-      <h3>Mobile:</h3> Kotlin et Android Studio.
-      <h3>Front side:</h3> Vanilla Javascript, Reactjs et Gatsbyjs.
-      <h3>Server side:</h3>
-      <ul css={css`list-style-type:none;`}>
+      <h3 css={css`display: inline;`}>Méthodologies: </h3>Agile, Scrum, Kanban et Merise.<br />
+      <h3 css={css`display: inline;`}>Design: </h3>Figma.<br />
+      <h3 css={css`display: inline;`}>Mobile: </h3>Kotlin et Android Studio.<br />
+      <h3 css={css`display: inline;`}>Front side: </h3>Vanilla Javascript, Reactjs et Gatsbyjs.<br />
+      <h3 css={css`display: inline;`}>Server side: </h3>
+      <ul css={css`list-style-type:none;
+                    text-align: left;
+                    display: table;`}>
         <li>Kotlin, Groovy, Java et Spring-Boot</li>
         <li>Javascript, Node.js et ExpressJs</li>
         <li>PostgreSQL, MySQL, H2 et Firebase</li>

@@ -26,10 +26,12 @@ const DomainFacade = () => {
   }
 
   return <>
+    {/*Hiding div */}
     <div id={LANDING} hidden={landingPageState !== LANDING}>
       <h1>Améliorer votre expérience digital.</h1>
       <button onClick={changeState}>Plus de détails</button>
     </div>
+    {/*Hiding div */}
     <div id={HOW_I_DO} hidden={landingPageState !== HOW_I_DO}>
       <h2>Comment j'interviens?</h2>
       <ol>
@@ -40,6 +42,7 @@ const DomainFacade = () => {
       </ol>
       <button onClick={changeState}>Mes outils</button>
     </div>
+    {/*Hiding div */}
     <div id={DOMAIN_TOOLS} hidden={landingPageState !== DOMAIN_TOOLS}>
       <h2>Mes outils</h2>
       <h3 css={css`display: inline;`}>Méthodologies: </h3>Agile, Scrum, Kanban et Merise.<br />
@@ -59,5 +62,4 @@ const DomainFacade = () => {
     </div>
   </>
 }
-
 export default DomainFacade

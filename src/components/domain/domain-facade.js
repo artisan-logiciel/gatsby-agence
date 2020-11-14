@@ -1,13 +1,9 @@
 import React, { useState } from "react"
 import { css } from "@emotion/core"
-
+import { LANDING, HOW_I_DO, DOMAIN_TOOLS } from "./index"
 
 const DomainFacade = () => {
-  const { LANDING, HOW_I_DO, DOMAIN_TOOLS } = {
-    LANDING: "landing",
-    HOW_I_DO: "howIdo",
-    DOMAIN_TOOLS: "tools"
-  }
+
   const [landingPageState, setLandingPageState] = useState(LANDING)
 
   const changeState = () => {

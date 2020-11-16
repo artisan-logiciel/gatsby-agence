@@ -46,7 +46,7 @@ const DomainFacade = () => {
       <ul css={css`list-style-type:none;
                     text-align: left;
                     display: table;`}>
-        <li>Kotlin, Groovy, Java et Spring-Boot</li>
+        <li>Kotlin, Groovy, Java et SpringBoot</li>
         <li>Javascript, Node.js et ExpressJs</li>
         <li>PostgreSQL, MySQL, H2 et Firebase</li>
         <li>Docker et Kubernetes</li>

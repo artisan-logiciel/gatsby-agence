@@ -4,29 +4,29 @@ import { LANDING, HOW_I_DO, DOMAIN_TOOLS } from "./index"
 
 const DomainFacade = () => {
 
-  const [landingPageState, setLandingPageState] = useState(LANDING)
+  const [pageState, setPageState] = useState(LANDING)
 
   const changeState = () => {
-    switch (landingPageState) {
+    switch (pageState) {
       case LANDING:
       default:
-        setLandingPageState(HOW_I_DO)
+        setPageState(HOW_I_DO)
         break
       case HOW_I_DO:
-        setLandingPageState(DOMAIN_TOOLS)
+        setPageState(DOMAIN_TOOLS)
         break
       case DOMAIN_TOOLS:
-        setLandingPageState(LANDING)
+        setPageState(LANDING)
         break
     }
   }
 
   return <>
-    <div id={LANDING} hidden={landingPageState !== LANDING}>
+    <div id={LANDING} hidden={pageState !== LANDING}>
       <h1>Améliorer votre expérience digital.</h1>
       <button onClick={changeState}>Plus de détails</button>
     </div>
-    <div id={HOW_I_DO} hidden={landingPageState !== HOW_I_DO}>
+    <div id={HOW_I_DO} hidden={pageState !== HOW_I_DO}>
       <h2>Comment j'interviens?</h2>
       <ol>
         <li>Analyse des besoins, identifications des traitements.</li>
@@ -36,7 +36,7 @@ const DomainFacade = () => {
       </ol>
       <button onClick={changeState}>Mes outils</button>
     </div>
-    <div id={DOMAIN_TOOLS} hidden={landingPageState !== DOMAIN_TOOLS}>
+    <div id={DOMAIN_TOOLS} hidden={pageState !== DOMAIN_TOOLS}>
       <h2>Mes outils</h2>
       <h3 css={css`display: inline;`}>Méthodologies: </h3>Agile, Scrum, Kanban et Merise.<br />
       <h3 css={css`display: inline;`}>Design: </h3>Figma.<br />

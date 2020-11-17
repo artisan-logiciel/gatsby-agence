@@ -4,7 +4,8 @@ import Helmet from "react-helmet"
 import Header from "./header"
 import useSiteMetadata from "../hooks/use-sitemetadata"
 
-export default function Layout({ children }) {
+const Layout = ({ children }) => {
+  //TODO: play here with pageState
   const { title, description } = useSiteMetadata()
   return <>
     <Global styles={css`
@@ -48,4 +49,5 @@ export default function Layout({ children }) {
                 margin: 2rem auto;
                 width: 1100px`}>{children}</main>
   </>
-};
+}
+export default Layout

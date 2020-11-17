@@ -4,6 +4,7 @@ import Hero from "../components/hero"
 import DomainFacade from "../components/domain/domain-facade"
 
 const Home = () =>
+
   <>
     <Hero />
     <Layout>

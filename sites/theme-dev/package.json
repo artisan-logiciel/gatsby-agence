@@ -5,9 +5,10 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "dev": "gatsby-develop"
+    "dev": "gatsby develop"
   },
   "dependencies": {
+    "gatsby": "^2.26.1",
     "gatsby-theme-docs": "*"
   }
 }

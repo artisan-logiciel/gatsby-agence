@@ -28,7 +28,8 @@ git checkout start
   - Add default config to `gatsby-config.js`
 - Make sure the content directory exists (`onPreBootstrap`)
   - `yarn add mkdirp`
-  - Validate that this works by starting the `theme-dev` site in `develop` mode
+  - Validate that this works by starting the `theme-dev` site in `develop` mode :
+  ```yarn workspace theme-dev develop```
 - Define the docs data type (`createSchemaCustomization`)
   - Show this data type in GraphiQL
   - Run a query to show it returning an empty array

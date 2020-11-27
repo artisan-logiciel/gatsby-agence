@@ -11,6 +11,7 @@ exports.onPreBootstrap = ({ store }, options) => {
 }
 
 exports.createSchemaCustomization = ({ actions }) =>
+  /*TODO: ticket on @dontInfer*/
   actions.createTypes(`
     type DocsPage implements Node @dontInfer {
       id: ID!
@@ -26,12 +27,9 @@ exports.onCreateNode = ({ node, actions, getNode, createNodeId }, options) => {
   const parent = getNode(node.parent)
 
   // Only work on MDX files that were loaded by this theme
-  if (
-    node.internal.type !== "Mdx" ||
-    parent.sourceInstanceName !== "gatsby-theme-docs"
-  ) {
-    return
-  }
+  if (node.internal.type !== "Mdx" ||
+    parent.sourceInstanceName !== "gatsby-theme-docs") return
+
 
   // Treat `index.mdx` link `index.html` (i.e. `docs/` vs. `docs/index/`).
   const pageName = parent.name !== "index" ? parent.name : ""

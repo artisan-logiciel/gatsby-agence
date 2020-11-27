@@ -1,1 +1,1 @@
-gatsby-theme-docs
+//gatsby-theme-docs

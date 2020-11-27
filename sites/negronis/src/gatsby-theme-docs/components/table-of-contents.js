@@ -19,7 +19,7 @@ const TableOfContents = () => {
 
   return (
     <div>
-      <h2>Explore the Docs</h2>
+      <h2>All Recipes</h2>
       <ul>
         {pages.map(({ id, path, title }) => (
           <li key={id}>

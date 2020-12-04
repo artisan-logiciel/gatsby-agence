@@ -1,9 +1,9 @@
 /** @jsx jsx */
-import { jsx } from 'theme-ui';
-import { graphql, Link, useStaticQuery } from 'gatsby';
+import { jsx } from "theme-ui"
+import { graphql, Link, useStaticQuery } from "gatsby"
 
 const TableOfContents = () => {
-  const data = useStaticQuery(graphql`
+  const { allDocsPage: { nodes: pages } } = useStaticQuery(graphql`
     query {
       allDocsPage {
         nodes {
@@ -13,10 +13,7 @@ const TableOfContents = () => {
         }
       }
     }
-  `);
-
-  const pages = data.allDocsPage.nodes;
-
+  `)
   return (
     <div>
       <h2>Explore the Docs</h2>
@@ -26,21 +23,18 @@ const TableOfContents = () => {
             <Link
               to={path}
               sx={{
-                '&.active': {
-                  fontStyle: 'italic',
-                  textDecoration: 'none',
-                  '::after': { content: '" (currently viewing)"' },
-                },
+                "&.active": {
+                  fontStyle: "italic",
+                  textDecoration: "none",
+                  "::after": { content: "\" (currently viewing)\"" }
+                }
               }}
-              activeClassName="active"
-            >
-              {title}
-            </Link>
+              activeClassName="active">{title}</Link>
           </li>
         ))}
       </ul>
     </div>
-  );
-};
+  )
+}
 
-export default TableOfContents;
+export default TableOfContents

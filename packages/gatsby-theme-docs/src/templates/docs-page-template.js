@@ -1,6 +1,6 @@
-import React from 'react';
-import { graphql } from 'gatsby';
-import DocsPage from '../components/docs-page';
+import React from "react"
+import { graphql } from "gatsby"
+import DocsPage from "../components/docs-page"
 
 export const query = graphql`
   query($pageID: String!) {
@@ -10,8 +10,8 @@ export const query = graphql`
       body
     }
   }
-`;
+`
 
-const DocsPageTemplate = ({ data }) => <DocsPage page={data.docsPage} />;
+const DocsPageTemplate = ({ data: { docsPage } }) => <DocsPage page={docsPage} />
 
-export default DocsPageTemplate;
+export default DocsPageTemplate

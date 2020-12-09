@@ -1,12 +1,13 @@
 {
   "name": "gatsby-agence",
   "private": true,
-  "description": "A digital agence build upon Gatsby",
+  "description": "A digital agence build upon GatsbyJs",
   "version": "0.0.1",
   "license": "0BSD",
+  "author": "Cher Oliv <cheroliv.developer@laposte.net> (https://cheroliv.com)",  
   "scripts": {
     "build": "gatsby build",
-    "dev": "gatsby develop",
+    "dev": "GATSBY_EXPERIMENTAL_LAZY_DEVJS=true gatsby develop",
     "devdark": "GATSBY_GRAPHQL_IDE=playground gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run develop",
@@ -41,9 +42,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/developer-artisan/gatsby-agence"
+    "url": "https://github.com/artisan-logiciel/gatsby-agence"
   },
   "bugs": {
-    "url": "https://github.com/developer-artisan/gatsby-agence/issues"
+    "url": "https://github.com/artisan-logiciel/gatsby-agence/issues"
   }
 }

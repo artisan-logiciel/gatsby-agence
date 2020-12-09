@@ -2,10 +2,10 @@
   "private": true,
   "name": "negronis",
   "version": "0.0.1",
-  "author": "Jason Lengstorf <jason@lengstorf.com> (https://lengstorf.com)",
+  "author": "Cher Oliv <cheroliv.developer@laposte.net> (https://cheroliv.com)",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop"
+    "develop": "GATSBY_EXPERIMENTAL_LAZY_DEVJS=true gatsby develop --port=8003"
   },
   "dependencies": {
     "@emotion/core": "^10.0.21",

@@ -5,7 +5,8 @@
     "sites/*"
   ],
   "scripts": {
-    "dev": "yarn workspace theme-dev develop",
+    "dev": "yarn workspace agence develop",
+    "td": "yarn workspace theme-dev develop",
     "honk": "yarn workspace honkify develop",
     "nis": "yarn workspace negronis develop"
   }

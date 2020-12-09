@@ -1,5 +1,6 @@
 .env
-cadrage/gatsby-agence-master
+sites/agence/.cache
+sites/agence/node_modules
 cadrage/doc
 gatsby-agence.code-workspace
 .vscode

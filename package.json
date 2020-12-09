@@ -6,6 +6,7 @@
   ],
   "scripts": {
     "dev": "yarn workspace agence develop",
+    "agence": "yarn workspace agence build",
     "td": "yarn workspace theme-dev develop",
     "honk": "yarn workspace honkify develop",
     "nis": "yarn workspace negronis develop"
